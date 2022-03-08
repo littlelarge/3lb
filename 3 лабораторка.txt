@@ -1,0 +1,45 @@
+data_tuple = ('h', 6.13, 'C', 'e', 'T', True, 'n', 't', 3, 'e', 1, 'P')
+
+#1
+
+letters = []
+numbers = []
+
+#2
+
+for i in data_tuple:
+    if isinstance(i, str):
+        letters.append(i)
+    else:
+        numbers.append(i)
+
+#3
+
+numbers.remove(6.13)
+letters.append(True)
+numbers.pop(0)
+numbers.insert(1, 2)
+
+#4
+
+numbers.sort()
+letters.reverse()
+letters[1] = 'f'
+letters[7] = 'U'
+
+#5
+
+numbersSqrt = []
+
+for i in numbers:
+    numbersSqrt.append(i * i)
+
+#6
+
+letters_tuple = tuple(letters)
+numbers_tuple = tuple(numbers)
+
+print(data_tuple)
+print(letters_tuple)
+print(numbers_tuple)
+print(numbersSqrt)
